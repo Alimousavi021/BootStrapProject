@@ -1,0 +1,336 @@
+main {
+    background-color: rgba(7, 7, 7, 0.938);
+    overflow-x: hidden;
+
+    >.headTop {
+        height: 65px;
+
+        button {
+            background-color: transparent;
+            color: red;
+            border: 1px solid red;
+            transition: 1s;
+
+            &:hover {
+                background-color: rgb(196, 7, 7);
+                color: white;
+            }
+
+        }
+
+        .menu {
+            ul>li {
+                list-style-type: none;
+
+                >a {
+                    text-decoration: none;
+                    color: red;
+                    transition: .4s;
+
+                    &:hover {
+                        color: white;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .homepage {
+        // height: 800px;
+        padding-top: 170px;
+
+        article {
+            figure {
+                height: 100px;
+                display: flex;
+                align-items: center;
+
+            }
+
+            p {
+                // height: 200px;
+                color: white;
+                font-size: 45px;
+                text-shadow: 0px 0px 10px red;
+                // margin-top: 150px;
+
+
+            }
+
+            button {
+                height: 50px;
+                // width: 80px;
+                background-color: red;
+                color: white;
+
+                &:hover {
+                    background-image: linear-gradient(-30deg, #1a1616, #343232);
+
+                }
+
+
+
+            }
+        }
+
+        // span{
+        //     padding-bottom: 1px;
+        // }
+
+    }
+
+    .animation {
+        height: 150px;
+        width: 2000px;
+
+        figure {
+            animation: anime1 infinite linear alternate 5s;
+
+        }
+
+
+    }
+
+    .homepagetitle {
+        height: 300px;
+
+        span {
+            font-size: 60px;
+            color: white;
+            border-left: 8px solid red;
+            background-image: linear-gradient(to right, rgba(255, 0, 0, 0.634), rgba(255, 0, 0, 0.327), rgba(255, 0, 0, 0.13), rgba(255, 0, 0, 0.075));
+        }
+
+        h5 {
+            color: rgb(207, 198, 198);
+            font-size: 25px;
+            text-transform: capitalize;
+
+        }
+    }
+
+    .homeGallery {
+        ul {
+            height: 50px;
+
+            >li {
+                list-style-type: none;
+                color: red;
+                border: 1px solid red;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 1s;
+                cursor: pointer;
+
+                // flex-grow: 1;
+                &:hover {
+                    background-color: red;
+                    color: white;
+                }
+            }
+        }
+
+        figure {
+            width: 100%;
+            border: 1px solid rgb(51, 50, 50);
+            border-radius: 5px;
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+
+            img {
+                transition: 2s;
+
+            }
+
+            &:hover>img {
+                transform: translateY(-50px);
+
+            }
+
+            >span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                color: white;
+                font-size: 15px;
+                height: 30px;
+                width: 100%;
+                justify-content: start;
+                align-items: center;
+                display: flex;
+                z-index: 1;
+                padding-left: 5px;
+
+            }
+
+            >figcaption {
+                position: absolute;
+                width: 100%;
+                height: 50px;
+                bottom: 0;
+                left: 0;
+                font-size: 24px;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+    }
+
+    .space {
+        height: 200px;
+
+
+        h4 {
+            color: white;
+            font-size: 50px;
+
+        }
+    }
+
+    .Product {
+        height: 650px;
+
+        figure {
+            cursor: pointer;
+
+            >img {
+                border: 1px solid red;
+            }
+
+            button {
+                height: 50px;
+                // width: 80px;
+                background-color: red;
+                color: white;
+                margin-top: 35px;
+
+                &:hover {
+                    background-image: linear-gradient(-30deg, #1a1616, #343232);
+
+                }
+
+
+
+            }
+
+        }
+    }
+
+    .flutter {
+        height: 700px;
+        margin-top: 300px;
+
+        @media screen and (max-width:768px) {
+            margin-top: 500px;
+
+        }
+
+        figure {
+            img {
+                border: 1px solid red;
+            }
+
+            button {
+                height: 50px;
+                // width: 80px;
+                background-color: red;
+                color: white;
+                margin-top: 35px;
+
+                &:hover {
+                    background-image: linear-gradient(-30deg, #1a1616, #343232);
+
+                }
+
+
+
+            }
+
+        }
+
+    }
+
+    .responsive {
+        height: 700px;
+        margin-top: 200px;
+
+        article {
+            span {
+                font-size: 60px;
+                color: white;
+                border-left: 8px solid red;
+                background-image: linear-gradient(to right, rgba(255, 0, 0, 0.634), rgba(255, 0, 0, 0.327), rgba(255, 0, 0, 0.13), rgba(255, 0, 0, 0.075));
+                transform: translateY(140px);
+            }
+
+            p {
+                color: white;
+                font-size: 20px;
+                transform: translateY(-100px);
+            }
+
+        }
+
+    }
+
+    .footer {
+        height: 850px;
+
+        .background {
+            background-image: url(../img/FOOT.jpg);
+
+            // position: relative;
+            // >*{
+            //     position: absolute;
+            // }
+            h2 {
+                // left: 15%;
+                // top: 30%;
+                font-size: 50px;
+                text-align-last: center;
+            }
+
+            p {
+                // left: 25%;
+                // top: 40%;
+                font-size: 20px;
+                background-color: rgb(243, 80, 80);
+                width: 100%;
+            }
+
+            button {
+                // top: 45%;
+                // left: 40%;
+                height: 50px;
+                width: 200px;
+                background-color: red;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-transform: uppercase;
+
+                &:hover {
+                    background-image: linear-gradient(-30deg, #1a1616, #343232);
+
+                }
+            }
+
+
+        }
+    }
+
+}
+
+@keyframes anime1 {
+    to {
+        transform: translateX(140px);
+    }
+
+}
